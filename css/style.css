@@ -1,0 +1,67 @@
+/* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes. Review Lesson 1.3
+if you need a refresher about how to do this. */
+
+*{
+    outline-color: crimson;
+}
+
+
+
+
+body{
+    background-image: url('https://ak7.picdn.net/shutterstock/videos/10177472/thumb/4.jpg');
+    background-size: cover;
+}
+
+#divLeft{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/*
+using google fonts
+font-family: 'Aref Ruqaa', serif;
+font-family: 'Just Another Hand', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'Swanky and Moo Moo', cursive;
+*/
+
+
+.Rugaa{
+    font-family: 'Aref Ruqaa', serif;
+}
+.Hand{
+    font-family: 'Just Another Hand', cursive;
+}
+.Merienda{
+    font-family: 'Merienda', cursive;
+}
+.allura{
+    font-family: 'Allura', cursive;
+}
+.NewDay{
+    font-family: 'Dawning of a New Day', cursive;
+}
+.Swanky{
+    font-family: 'Swanky and Moo Moo', cursive;
+}
+
+
+/*
+For logo
+*/
+.logo{
+    border-radius: 20%;
+    width: 50%;
+    height: 50%
+    
+
+
+}

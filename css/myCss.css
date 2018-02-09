@@ -1,0 +1,25 @@
+
+/*créer un style spécial de bouton*/
+.button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.buttonRadius {
+
+	border-radius: 50%;
+}
+
+.galleryRadius {
+
+	border-radius: 3%;
+}
+
+.backg {
+	background-color: #eee6ff;
+}
