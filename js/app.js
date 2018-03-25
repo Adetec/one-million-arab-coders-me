@@ -45,3 +45,40 @@ aboutMe.addEventListener('click', function(){
     me.style.display = 'block';
   }
 });
+
+
+var worksshops = [
+ {
+   id: 'clone-omac',
+   type: 'html & css',
+   href: ''
+ },
+ {
+  id: 'clone-facebook',
+  type: 'html & css',
+  href: ''
+},
+{
+  id: 'challenge',
+  type: 'html & css',
+  href: ''
+},
+{
+  id: 'quizz',
+  type: 'javaScript',
+  href: ''
+},
+{
+  id: 'array',
+  type: 'javaScript',
+  href: ''
+},
+{
+  id: 'objects',
+  type: 'javaScript',
+  href: ''
+},
+
+
+
+]
