@@ -51,34 +51,32 @@ var worksshops = [
  {
    id: 'clone-omac',
    type: 'html & css',
-   href: ''
+   href: '../courses/alhakeem/semantic-html-course/'
  },
  {
   id: 'clone-facebook',
   type: 'html & css',
-  href: ''
+  href: '../facebook-clone-tutor-v'
 },
 {
   id: 'challenge',
   type: 'html & css',
-  href: ''
+  href: '../../contest2'
 },
 {
   id: 'quizz',
   type: 'javaScript',
-  href: ''
+  href: '../../courses/quizz'
 },
 {
   id: 'array',
   type: 'javaScript',
-  href: ''
+  href: '../courses/alhakeem/array/'
 },
 {
   id: 'objects',
   type: 'javaScript',
-  href: ''
+  href: '../courses/alhakeem/products'
 },
-
-
 
 ]
