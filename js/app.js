@@ -83,7 +83,10 @@ var worksShops = [
 
 
 var worksShopsSlider = document.getElementById('workshops-slider');
-
+var indicators = document.getElementById('carousel-indicators');
+var slideTo= 1;
 worksShops.forEach(function(element){
+  indicators.innerHTML+= '<li data-target="#myCarousel" data-slide-to="'+worksShops[slideTo]+'"></li>';
+  slideTo++;
   worksShopsSlider.innerHTML+= '<div class="item"><a href="'+element.href+'"><img src="images/'+element.id+'.png" alt="'+element.id+'"></a></div>'
 })
