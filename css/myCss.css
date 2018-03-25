@@ -23,3 +23,8 @@
 .backg {
 	background-color: #eee6ff;
 }
+
+#nav-footer li{
+    margin: 0 auto;
+    color: #fff;
+}

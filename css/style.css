@@ -303,5 +303,14 @@ nav, .drop{
     -ms-transition: left 0.3s ease-in-out;
     transition: left 0.3s ease-in-out;
 }
+#nav-footer{
+    display: flex;
+    width: 100%
+}
+
+#nav-footer li{
+    margin: 0 auto;
+    color: #fff;
+}
 
 
