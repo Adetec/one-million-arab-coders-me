@@ -62,3 +62,18 @@ abdaLwakt();
   };
 
 } )( jQuery );
+
+// Enabled/disabled my information:
+
+var me = document.getElementById("me");
+var aboutMe = document.getElementById("about-me");
+
+
+aboutMe.addEventListener('click', function(){
+  if (me.style.display == 'block' ) {
+    me.style.display = 'none';
+  }
+  else{
+    me.style.display = 'block';
+  }
+});

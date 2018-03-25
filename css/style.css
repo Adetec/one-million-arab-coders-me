@@ -90,6 +90,10 @@ nav, .drop{
 
 }
 
+#me{
+    display: none;
+}
+
 
 #nav-footer{
     display: flex;
