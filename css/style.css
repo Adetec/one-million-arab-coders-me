@@ -104,6 +104,10 @@ nav, .drop{
     margin: auto 0;
 }
 
+.flex-box{
+    display: flex;
+}
+
 #nav-footer li{
     margin: 0 auto;
     color: #fff;
