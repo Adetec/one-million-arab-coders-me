@@ -5,7 +5,9 @@
 }
 */
 
-
+#notes ul{
+    position: relative;
+}
 
 body{
     background-image: url('https://ak7.picdn.net/shutterstock/videos/10177472/thumb/4.jpg');
