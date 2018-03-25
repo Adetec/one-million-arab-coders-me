@@ -47,7 +47,7 @@ aboutMe.addEventListener('click', function(){
 });
 
 
-var worksshops = [
+var worksShops = [
  {
    id: 'clone-omac',
    type: 'html & css',
@@ -80,3 +80,10 @@ var worksshops = [
 },
 
 ]
+
+
+var worksShopsSlider = document.getElementById('workshops-slider');
+
+worksShops.forEach(function(element){
+  worksShopsSlider.innerHTML+= '<div class="item"><a href="'+element.href+'"><img src="images/'+element.id+'.png" alt="'+element.id+'"></a></div>'
+})
