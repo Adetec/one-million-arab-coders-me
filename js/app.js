@@ -1,62 +1,64 @@
-//Get time
-document.getElementById("wakt").innerHTML = new Date().toLocaleTimeString();
+var visitor = prompt('Please, enter your name')
+swal('Hello '+visitor);
+document.getElementById('visitor').innerHTML='Welcome '+visitor+'!';
 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
- 
-const DEFAULT_INPUT_TEXT = "";
- 
-class MyInput extends Component {
-  constructor(props) {
-    super(props);
- 
-    this.state = {
-      text: DEFAULT_INPUT_TEXT,
-    };
+
+
+// Get time tictac tictac
+
+function jibLwakt(i) {
+  if (i < 10) {
+    i = "0" + i;
   }
- 
-  changeText(e) {
-    let text = e.target.value;
- 
-    this.setState({
-      text,
-    });
- 
-    /*
-     * This will update the value that the confirm
-     * button resolves to:
-     */
-    swal.setActionValue(text);
-  }
- 
-  render() {
-    return (
-      <input
-        value={this.state.text}
-        onChange={this.changeText.bind(this)}
-      
-    )
-  }
+  return i;
 }
- 
-// We want to retrieve MyInput as a pure DOM node: 
-let wrapper = document.createElement('div');
-ReactDOM.render(<MyInput />, wrapper);
-let el = wrapper.firstChild;
- 
-swal({
-  text: "Write something here:",
-  content: el,
-  buttons: {
-    confirm: {
-      /*
-       * We need to initialize the value of the button to
-       * an empty string instead of "true":
-       */
-      value: DEFAULT_INPUT_TEXT,
-    },
-  },
-})
-.then((value) => {
-  swal(`You typed: ${value}`);
-});
+
+function abdaLwakt() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  // add a zero in front of numbers<10
+  m = jibLwakt(m);
+  s = jibLwakt(s);
+  document.getElementById('wakt').innerHTML = h + ":" + m + ":" + s;
+  t = setTimeout(function() {
+    abdaLwakt()
+  }, 500);
+}
+abdaLwakt();
+
+
+
+( function( $ ) {
+  
+  $.fn.hoverfold = function( args ) {
+
+    this.each( function() {
+    
+      $( this ).children( '.view' ).each( function() {
+      
+        var $item   = $( this ),
+          img   = $item.children( 'img' ).attr( 'src' ),
+          struct  = '<div class="slice s1">';
+            struct  +='<div class="slice s2">';
+              struct  +='<div class="slice s3">';
+                struct  +='<div class="slice s4">';
+                  struct  +='<div class="slice s5">';
+                  struct  +='</div>';
+                struct  +='</div>';
+              struct  +='</div>';
+            struct  +='</div>';
+          struct  +='</div>';
+          
+        var $struct = $( struct );
+        
+        $item.find( 'img' ).remove().end().append( $struct ).find( 'div.slice' ).css( 'background-image', 'url(' + img + ')' ).prepend( $( '<span class="overlay" ></span>' ) );
+        
+      } );
+      
+    });
+
+  };
+
+} )( jQuery );

@@ -15,7 +15,7 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/W3.js"></script>
   <script src="js/tcal.js"></script>
-  <script src="js/app.js"></script>
+  
 
 
   <!-- including css files-->
@@ -27,7 +27,14 @@
   <link href="https://fonts.googleapis.com/css?family=Allura|Aref+Ruqaa|Dawning+of+a+New+Day|Just+Another+Hand|Merienda|Swanky+and+Moo+Moo&amp;subset=arabic,latin-ext" rel="stylesheet">
   <link href="images/coder.png" rel="icon" type="image/png" />
 
-  
+  <script>
+    $(document).ready(function(){
+      $("#").hover(function(){
+        $(this).addClass("animated fadeIn");
+        });
+
+    });
+</script>
   
 </head>
 <body class="container Merienda animated bounceInDown"> 
@@ -46,8 +53,14 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav animated bounceInLeft">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#">Html</a></li>
-        <li><a href="#">Java Script</a></li> 
+        <li id="notes"><a href="#">Udacity course notes</a>
+          <ul class="drop navbar-inverse animated fadeIn">
+             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">HTML & CSS</a></li>
+             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Javascript</a></li>
+             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Git & Github</a></li>
+           </ul>
+        </li>
+        <li><a href="#">forum</a></li> 
         <li ><a class="animated infinite flash" href="https://macdiscussions.udacity.com/u/adetech.aadl">About me</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -71,37 +84,56 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">I'll put title here..</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">HTML & CSS</a>
               </h4>
             </div>
             <div id="collapse1" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <div class="panel-body">
+                <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.[3] Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+
+                <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as "< img /> and < input />" introduce content into the page directly. Others such as "< p >...< /p >" surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+
+                <p>HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
+                <p align="right"><a href="https://en.wikipedia.org/wiki/HTML" target="_BLANK">Source</a></p>
+              </div>
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Another one here..</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Javascript</a>
               </h4>
             </div>
             <div id="collapse2" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <div class="panel-body">
+                <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.</p>
+
+                <p>As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.</p>
+
+                <p>Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets.</p>
+
+                <p>Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme.</p>
+                <p align="right"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_BLANK">Source</a></p>
+              </div>
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Also one here..</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Git & Github</a>
               </h4>
             </div>
             <div id="collapse3" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <div class="panel-body">
+                <p>A component of software configuration management, version control, also known as revision control or source control,[1] is the management of changes to documents, computer programs, large web sites, and other collections of information. Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, and with some types of files, merged.</p>
+
+                <p>The need for a logical way to organize and control revisions has existed for almost as long as writing has existed, but revision control became much more important, and complicated when the era of computing began. The numbering of book editions and of specification revisions are examples that date back to the print-only era. Today, the most capable (as well as complex) revision control systems are those used in software development, where a team of people may change the same files.</p>
+
+                <p>Version control systems (VCS) most commonly run as stand-alone applications, but revision control is also embedded in various types of software such as word processors and spreadsheets, collaborative web docs[2] and in various content management systems, e.g., Wikipedia's page history. Revision control allows for the ability to revert a document to a previous revision, which is critical for allowing editors to track each other's edits, correct mistakes, and defend against vandalism and spamming.</p>
+
+                <p>Software tools for version control are essential for the organization of multi-developer projects.</p>
+                <p align="right"><a href="https://en.wikipedia.org/wiki/Version_control" target="_BLANK">Source</a></p>
+              </div>
             </div>
           </div>
         </div> 
@@ -111,7 +143,7 @@
     <div id="divLeft" class="col-sm-8">
       <div>
         <h2 class="text-center text-primary animated infinite pulse">1 Million Arab Coders initiative </h2>
-        <h3 class="text-center text-success">My first project </h3>
+        <h3 id="visitor" class="text-center text-success">My first project </h3>
       </div>
       <div class="container-fluid">
         <h4 class="text-center">Some pics</h4>  
@@ -126,15 +158,26 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="images/wallpaper-background-for-pc-26.jpg" alt="Los Angeles" style="width:100%;">
+              <img src="images/wallpaper-background-for-pc-26.jpg" alt="1" style="width:100%; height: 100%;">
             </div>
 
             <div class="item">
-              <img src="images/wallpaper-background-for-pc-23.jpg" alt="Chicago" style="width:100%;">
+              <img src="images/wallpaper-background-for-pc-23.jpg" alt="2" style="width:100%; height: 100%;">
             </div>
           
             <div class="item">
-              <img src="images/wallpaper-background-for-pc-24.jpg" alt="New york" style="width:100%;">
+              <img src="images/wallpaper-background-for-pc-24.jpg" alt="3" style="width:100%; height: 100%;">
+            </div>
+            <div class="item active">
+              <img src="images/wallpaper-background-for-pc-30.jpg" alt="1" style="width:100%; height: 100%;">
+            </div>
+
+            <div class="item">
+              <img src="images/wallpaper-background-for-pc-31.jpg" alt="2" style="width:100%; height: 100%;">
+            </div>
+          
+            <div class="item">
+              <img src="images/wallpaper-background-for-pc-35.jpg" alt="3" style="width:100%; height: 100%;">
             </div>
           </div>
 
@@ -148,18 +191,24 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        
+        
       </div>      
     </div>    
   </div>
+  
   <div class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container-fluid">   
       <ul class="nav navbar-nav">
-        <li ><a id="wakt" ></a></li>
+        <li id="wakt" ></li>
       </ul>
     </div>
   </nav>
 </div>
 
 </body>
+<script src="js/app.js"></script>
+
+
 </html>
