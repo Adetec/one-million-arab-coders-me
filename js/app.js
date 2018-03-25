@@ -51,32 +51,38 @@ var worksShops = [
  {
    id: 'clone-omac',
    type: 'html & css',
-   href: '../courses/alhakeem/semantic-html-course/'
+   href: '../courses/alhakeem/semantic-html-course/',
+   label: 'Clone omac website'
  },
  {
   id: 'clone-facebook',
   type: 'html & css',
-  href: '../facebook-clone-tutor-v'
+  href: '../facebook-clone-tutor-v',
+  label: 'clone facebook home page'
 },
 {
   id: 'challenge',
   type: 'html & css',
-  href: '../../contest2'
+  href: '../../contest2',
+  label: 'secone week contest (Andrew Nady)'
 },
 {
   id: 'quizz',
   type: 'javaScript',
-  href: '../../courses/quizz'
+  href: '../../courses/quizz',
+  label: 'Condition loop course'
 },
 {
   id: 'array',
   type: 'javaScript',
-  href: '../courses/alhakeem/array/'
+  href: '../courses/alhakeem/array/',
+  label: 'array workshop'
 },
 {
   id: 'objects',
   type: 'javaScript',
-  href: '../courses/alhakeem/products'
+  href: '../courses/alhakeem/products',
+  label: 'javaScript workshop (objects)'
 },
 
 ]
