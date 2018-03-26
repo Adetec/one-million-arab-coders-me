@@ -94,5 +94,5 @@ var slideTo= 1;
 worksShops.forEach(function(element){
   indicators.innerHTML+= '<li data-target="#myCarousel" data-slide-to="'+worksShops[slideTo]+'"></li>';
   slideTo++;
-  worksShopsSlider.innerHTML+= '<div class="item"><a href="'+element.href+'"><img src="images/'+element.id+'.png" alt="'+element.id+'"></a><div class="text-center text-primary h4">'+element.label+'</div></div>'
+  worksShopsSlider.innerHTML+= '<div class="item"><a href="'+element.href+'" target="_BLANK"><img src="images/'+element.id+'.png" alt="'+element.id+'"></a><div class="text-center text-primary h4">'+element.label+'</div></div>'
 })
