@@ -89,9 +89,7 @@ nav, .drop, #myCarousel{
     margin: 10px;
     list-style-type: none;
 }
-.drop ul{
 
-}
 
 #me{
     display: none;
@@ -99,7 +97,7 @@ nav, .drop, #myCarousel{
 
 .glyphicon{
     margin-right: 8px;
-    font-size: 12px;
+    font-size: 24px;
 }
 #nav-footer{
     display: flex;
