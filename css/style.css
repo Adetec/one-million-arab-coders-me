@@ -97,7 +97,10 @@ nav, .drop, #myCarousel{
     display: none;
 }
 
-
+.glyphicon{
+    margin-right: 8px;
+    font-size: 12px;
+}
 #nav-footer{
     display: flex;
     width: 100%;
