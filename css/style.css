@@ -99,6 +99,10 @@ nav, .drop, #myCarousel{
     margin-right: 8px;
     font-size: 24px;
 }
+
+#divMain{
+    margin-bottom: 10px;
+}
 #nav-footer{
     display: flex;
     width: 100%;

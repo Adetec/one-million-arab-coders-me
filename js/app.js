@@ -138,3 +138,6 @@ worksShops.forEach(function(element){
   slideTo++;
   worksShopsSlider.innerHTML+= '<div class="item"><a href="'+element.href+'" target="_BLANK"><img src="images/'+element.id+'.png" alt="'+element.id+'"></a><div class="text-center text-primary h4">'+element.label+'</div></div>'
 })
+
+
+

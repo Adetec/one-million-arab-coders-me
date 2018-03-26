@@ -43,39 +43,40 @@
 <body class="container Merienda animated bounceInDown" onload="checkCookie()"> 
  
   <!-- navbar -->
-<nav class="navbar navbar-inverse animated bounceInDown">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#"><img class="img-thumbnail logo animated infinite pulse" src="images/coder.png"></a>
+<header>
+  <nav class="navbar navbar-inverse animated bounceInDown">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-thumbnail logo animated infinite pulse" src="images/coder.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav animated bounceInLeft">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li id="notes"><a href="#">Front-end developper</a>
+            <ul class="drop navbar-inverse animated fadeIn">
+              <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">HTML & CSS</a></li>
+              <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Javascript</a></li>
+              <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Git & Github</a></li>
+            </ul>
+          </li>
+          <li><a href="https://macdiscussions.udacity.com/u/adetech.aadl/summary" target="_BLANK">My forum profile</a></li> 
+          <li id="about-me" ><a class="animated infinite flash" href="#me">About me</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav animated bounceInLeft">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li id="notes"><a href="#">Front-end developper</a>
-          <ul class="drop navbar-inverse animated fadeIn">
-             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">HTML & CSS</a></li>
-             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Javascript</a></li>
-             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Git & Github</a></li>
-           </ul>
-        </li>
-        <li><a href="https://macdiscussions.udacity.com/u/adetech.aadl/summary" target="_BLANK">My forum profile</a></li> 
-        <li id="about-me" ><a class="animated infinite flash" href="#me">About me</a></li> 
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-
-
+<main>
   <!-- Dividing the body into columns -->
   <div id="divMain" class="row" >
     <div id="divLeft" class="col-sm-4" >
@@ -201,7 +202,9 @@
       </div>      
     </div>    
   </div>
-  
+</main>
+
+<footer>
   <div class="container">
     <nav class="navbar navbar-inverse navbar-fixed-bottom container flex-box">
       
@@ -211,10 +214,11 @@
       </ul>
     
   </nav>
-</div>
-
-</body>
+  </div>
+</footer>
 <script src="js/app.js"></script>
+</body>
+
 
 
 </html>
