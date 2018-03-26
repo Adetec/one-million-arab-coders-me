@@ -82,7 +82,7 @@ For logo
     text-decoration: none;
     color: #fff;
 }
-nav, .drop{
+nav, .drop, #myCarousel{
     box-shadow: 0 0 20px rgb(28, 33, 59);
 }
 .drop li{
