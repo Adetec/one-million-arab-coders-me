@@ -90,7 +90,9 @@ nav, .drop, #myCarousel{
     list-style-type: none;
 }
 
-
+a{
+    text-decoration-line: none;
+}
 #me{
     display: none;
 }
