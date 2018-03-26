@@ -27,12 +27,12 @@ function getCookie(cname) {
 function checkCookie() {
   var visitor=getCookie("Visitor");
   if (visitor != "") {
-    swal('Welcome again '+visitor);
+    swal('Welcome again <span class="text-primary">'+visitor+'</span>');
   } else {
      visitor = prompt("Please enter your name:","");
      if (visitor != "" && visitor != null) {
          setCookie("Visitor", visitor, 30);
-         swal('Hello '+visitor+'\nYour name is saved in your browser!');
+         swal('Hello <span class="text-primary">'+visitor+'</span>\n<small>Your name is saved in your browser!<br>cooookieeees </small><span class="glyphicon glyphicon-floppy-saved text-primary""></span>');
      }
      
   }
