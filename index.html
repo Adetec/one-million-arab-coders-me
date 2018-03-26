@@ -30,7 +30,10 @@
   <script>
     $(document).ready(function(){
       $("*").hover(function(){
-        $(this).addClass("animated fadeIn");
+        $(this).addClass("animated pulse");
+        $('#about-me,.navbar-brand,#navbar-brand').removeClass("pulse");
+        
+
         });
 
     });
@@ -163,7 +166,7 @@
 
     <div id="divLeft" class="col-sm-8">
       <div>
-        <h2 class="text-center text-primary animated infinite pulse">1 Million Arab Coders initiative </h2>
+        <h2 id="omac" class="text-center text-primary animated infinite pulse">1 Million Arab Coders initiative </h2>
         <h3 id="visitor" class="text-center text-success">My first project </h3>
       </div>
       <div class="container-fluid">
