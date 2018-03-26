@@ -111,7 +111,7 @@ var worksShops = [
 {
   id: 'quizz',
   type: 'javaScript',
-  href: '../../courses/quizz',
+  href: '../../courses/quiz',
   label: 'Condition loop course'
 },
 {
