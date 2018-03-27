@@ -126,6 +126,13 @@ a{
     padding: 0 4px;
 }
 
+.scrollable{
+    position: relative;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
 .heart {
     display: flex;
     position: relative;
